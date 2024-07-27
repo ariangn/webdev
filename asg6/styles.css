@@ -108,6 +108,10 @@ ul li a:hover:before{
         font-family: 'Voyage', serif; 
     }
 
+    h2 {
+        font-size: 50px;
+    }
+
     .header {
         flex-direction: column;
         align-items: flex-start;
