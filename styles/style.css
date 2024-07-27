@@ -116,6 +116,10 @@ ul li a:hover:before{
     	align-items: flex-start;
 
     }
+
+    img {
+        max-width: 60%;
+    }
 }
 
 .main {
@@ -131,12 +135,14 @@ p {
 
 img {
 	padding: 20px;
+    max-width: 400px;
+    width: 100%; 
+    height: auto;
 }
 
 .footer {
-    position: fixed;
+    position: static;
     bottom: 0;
     right: 0;
     padding: 20px;
-    background-color: #F3EEE8;
 }
