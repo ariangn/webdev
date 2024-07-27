@@ -97,6 +97,11 @@ ul li a:hover:before{
   transform:scaleX(1);
 }
 
+body h2 a{
+    font-size: 80px;
+    text-decoration: none!important;
+}
+
 /* Media query for smaller screens (max-width: 768px) */
 @media (max-width: 768px) {
 
@@ -104,7 +109,7 @@ ul li a:hover:before{
         font-family: 'Voyage', serif; 
     }
 
-    h2 {
+    h2 a{
         font-size: 50px;
     }
 
@@ -130,9 +135,8 @@ ul li a:hover:before{
     }
 }
 
-h2 {
-    font-size: 80px;
-    text-decoration: none!important;
+a:-webkit-any-link {
+    text-decoration: none !important;
 }
 
 h3 {
