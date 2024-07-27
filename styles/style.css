@@ -116,13 +116,6 @@ ul li a:hover:before{
     	align-items: flex-start;
 
     }
-
-    img {
-        max-width: 60%;
-        max-height: 60%;
-        width: 100%; 
-        height: auto;
-    }
 }
 
 .main {
@@ -139,7 +132,7 @@ p {
 img {
 	padding: 20px;
     max-width: 400px;
-    width: 100%; 
+    width: 60%;
     height: auto;
 }
 
