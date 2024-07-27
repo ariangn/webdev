@@ -2,7 +2,7 @@
 
 @font-face { 
     font-family: Voyage; 
-    src: url('voyage-regular.otf'); 
+    src: url('../../styles/voyage-regular.otf'); 
 } 
 
 body {
