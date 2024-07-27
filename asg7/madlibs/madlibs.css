@@ -1,0 +1,99 @@
+/* My stylesheet! */
+
+@font-face { 
+    font-family: Voyage; 
+    src: url('voyage-regular.otf'); 
+} 
+
+body {
+    transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+    font-family: 'Voyage', serif; 
+    color: black;
+    padding: 10px;
+    background-color: #F3EEE8;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Media query for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+
+    body {
+        font-family: 'Voyage', serif; 
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+}
+
+h2 {
+    font-size: 80px;
+    padding-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#button {
+    font-family: 'Voyage', serif;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #F3EEE8;
+    border: 2px dotted #000;
+    border-radius: 5px;
+}
+
+#button:hover {
+    background-color: #F6B9C6;
+}
+
+#button:active {
+     background-color: #D73234;
+}
+
+.footer {
+    font-family: 'Quicksand', sans-serif;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+}
+
+
+p, form {
+    font-family: Quicksand;
+}
+
+form input {
+    display: block;
+    width: 20%;
+    margin-bottom: 5px;
+    font-family: Quicksand;
+}
+
+form {
+    margin: 30px;
+}
+
+.madlibs-story {
+    border: none;
+    font-family: Quicksand;
+}

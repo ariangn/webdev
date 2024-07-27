@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css" />
+    <title>GAME</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div class="container">
+        <!-- Header part -->
+        <div class="header">
+            <h1>G A M E</h1>
+            <h4>GaME ARCaDE MaRKETPLaCE EXPERIENCE</h4>
+        </div>
+        
+        <!-- Menu/Nav Bar -->
+        <div class="menu">
+            <a class="active" href="index.html">Home</a>
+            <a href="shopping.html">Shopping Cart</a>
+            <a href="signup.html">Sign-up</a>
+            <a href="login.html">Login</a>
+            <a href="search.html">Search</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+
+        <br> <br>
+    
+        <!-- Main part with the contact application -->
+        <div class="main1">
+            <h1>Contact Form</h1>
+            <h5>Please fill out this form to contact us:</h5>
+            
+            
+            
+            <div class="form">
+                <form action="#" method="get">
+                    <div class="part">
+                        <div class="intro">
+                            Your Name:
+                        </div>
+                        <!-- Series of inputs (text/email/...) -->
+                        <div class="input">
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="part">
+                        <div class="intro">
+                            Your Email:
+                        </div>
+                        <div class="input">
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="part">
+                        <div class="intro">
+                            Do you play board games at your free time?
+                        </div>
+                        <div class="input">
+                            <input type="radio" id="yes1" name="age" value="yes">
+                            <label for="yes">Yes</label><br>
+                            <input type="radio" id="no1" name="age" value="no">
+                            <label for="no">No</label><br>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="part">
+                        <div class="intro">
+                            Are your questions related to the following?
+                        </div>
+                        <div class="input">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="private">
+                            <label for="vehicle1">Unable to submit the shopping cart</label><br>
+                            <input type="checkbox" id="vehicle2" name="vehicle2" value="shuttle">
+                            <label for="vehicle2">Your product is out of stock</label><br>
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="bus">
+                            <label for="vehicle3">Technology problem</label><br>
+                            <input type="checkbox" id="vehicle4" name="vehicle4" value="others">
+                            <label for="vehicle4">Others</label><br>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Small section with the message print section-->
+                    <div class="part">
+                        <div class="intro">
+                            <label for="message">Message:</label>
+                        </div>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <br>
+                    <button type="submit" id="submit" onclick="handle()">Submit</button>
+                    <input type="reset" value="Clear">
+                </form>
+            </div>
+        </div>
+
+        <br> <br> 
+
+
+        <div class="footer">
+            Laura Chen, Alex Manko, Aria Nguyen
+            &copy; Web Development - Updated 2023
+        </div>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>

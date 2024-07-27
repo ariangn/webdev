@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css" />
+    <title>GAME - Login</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>G A M E</h1>
+            <h4>GaME ARCaDE MaRKETPLaCE EXPERIENCE</h4>
+        </div>
+<!--Nav bar-->
+    <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="shopping.html">Shopping Cart</a>
+            <a href="signup.html">Sign-up</a>
+            <a class="active" href="login.html">Login</a>
+            <a href="search.html">Search</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+
+        <br> <br>
+<!--login button-->
+
+        <div class="main1">
+            <h1> Login </h1>
+            <form action="login.php" method="post">
+                <!--set by classes to match the css-->
+
+                <div class="part">
+                    <div class="intro">
+                        <label for="username">Username:</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="part">
+                    <div class="intro">
+                        <label for="password">Password:</label>
+                    </div>
+                    <div class="input">
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <p></p>
+                </div>
+                <input type = "submit">
+                <input type = "reset">
+
+            </form>
+        </div>
+
+        <br> <br> 
+<!--foot notes-->
+
+        <div class="footer">
+            Laura Chen, Alex Manko, Aria Nguyen
+            &copy; Web Development - Updated 2023
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

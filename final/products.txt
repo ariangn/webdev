@@ -1,0 +1,3 @@
+pacman:$25:150:Pacman game (on PC)
+monopoly:$30:50:Monopoly board game
+tetris:$15:100:Tetris game (on PC)

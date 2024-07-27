@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="game.css" />
+    <title>GAME</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div class="container">
+
+        <!-- header -->
+        <div class="header">
+            <h1>G A M E</h1>
+            <h4>GaME ARCaDE MaRKETPLaCE EXPERIENCE</h4>
+        </div>
+        
+        <!-- nav bar here -->
+        <div class="menu">
+            <a class="active" href="index.html">Home</a>
+            <a href="shopping.html">Shopping Cart</a>
+            <a href="signup.html">Sign-up</a>
+            <a href="login.html">Login</a>
+            <a href="search.html">Search</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+
+        <br> <br>
+
+        <div class="main1">
+            <h1>test your memory with this game!</h1>
+
+            <!-- buttons for game -->
+            <div class="actions">
+                <button id="start-button" onclick="startGame()">Start Game</button>
+                <button onclick="restart()">Restart</button>
+            </div>
+
+            <!-- game will go here -->
+            <div class="grid-container" id="game-container"></div>
+            <p>Flips: <span class="score">0</span></p>
+        </div> 
+
+        <br> <br> 
+
+        <div class="footer">
+            Laura Chen, Alex Manko, Aria Nguyen
+            &copy; Web Development - Updated 2023
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

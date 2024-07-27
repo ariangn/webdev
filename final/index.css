@@ -1,0 +1,144 @@
+
+@font-face { 
+    font-family: Pacmania; 
+    src: url('Pacmania.ttf'); 
+} 
+
+@font-face {
+    font-family: Manrope;
+    src: url('Manrope.ttf');
+}
+
+@font-face {
+    font-family: o4b;
+    src: url('o4b.TTF');
+}
+
+body {
+    background-color: #0072A6;
+    margin: 0;
+    font-family: Manrope;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 70px;
+    margin: 0px;
+    padding-top: 40px;
+    color: #FDEE24;
+    font-family: Pacmania;
+}
+
+.header h4 {
+    font-family: o4b;
+}
+
+.menu {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0072A6;
+}
+
+.menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-family: Pacmania;
+}
+
+.menu a:hover {
+    color: #EE8929;
+}
+
+.main1 {
+    background-color: #E96CA3;
+    border-color: #FDEE24;
+    border-width: 15px;
+    border-style: solid;
+    border-radius: 10px;
+    color: black;
+    max-width: 90%;
+    font-size: 20px;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.main1 h1 {
+    font-family: Pacmania;
+}
+
+.main1 h2 {
+    font-family: Pacmania;
+}
+
+.products img {
+    width: 300px;
+}
+
+button {
+    border-color: #0072A6;
+    background-color: #0072A6;
+    font-family: Pacmania;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: white;
+    color: #0072A6;
+}
+
+label {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+input[type="radio"] {
+  display: inline-block;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    border-color: #0072A6;
+    background-color: #0072A6;
+    font-family: Pacmania;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: white;
+    color: #0072A6;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .main1 {
+        width: 85%;
+    }
+}

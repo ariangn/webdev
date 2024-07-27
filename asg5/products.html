@@ -1,0 +1,152 @@
+<!Doctype>
+
+<html>
+
+	<head>
+
+		<title> Assignment 5 — Products</title>
+		<meta name="description" content="This is my Assignment page">
+        <meta name="author" content="Aria Nguyen">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+
+    </head>
+
+     <body>
+
+        <div class="header">
+            <header>
+                <h1>aria <br> nguyen</h1>
+                <h3>web development and programming</h3>
+            </header>
+            
+
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">home</a></li>
+                        <li><a href="../contact.html">contact me</a></li>
+                        <li><a href="../asg2">2</a></li>
+                        <li><a href="../asg3">3</a></li>
+                        <li><a href="../asg4">4</a></li>
+                        <li><a href="../asg5">5</a></li>
+                        <li><a href="../asg6">6</a></li>
+                        <li><a href="../asg7">7</a></li>
+                        <li><a href="../final">final</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <br> 
+
+        <div class="body">
+            <h2> purchase your broadway tickets!</h2>
+            <script type="text/javascript" src="asg5cart.js"></script>
+            <div class="left">
+                <form>
+                    <div class="products">
+                        <div class="product">
+                            <h3>Sweeney Todd</h3>
+                            <img src="imgs/sweeney.jpg"/>
+                            <p>Price: $73</p>
+                            <p><span>Quantity: </span>
+                            <input type="number" name="Sweeney Todd Show" id="sweeney" value="0"></p>
+                            <p><span>Total: </span>
+                            <input readonly type="number" value="0" id="sweeney_total"></p>
+                        </div>
+                        <div class="product">
+                            <h3>Hadestown</h3>
+                            <img src="imgs/hadestown.jpg"/>
+                            <p>Price: $68</p>
+                            <p><span>Quantity: </span>
+                            <input type="number" name="Hadestown Show" id="hadestown" value="0"></p>
+                            <p><span>Total: </span>
+                            <input readonly type="number" value="0" id="hadestown_total"></p>
+                        </div>
+                        <div class="product">
+                            <h3>Wicked</h3>
+                            <img src="imgs/wicked.jpg"/>
+                            <p>Price: $94</p>
+                            <p><span>Quantity: </span>
+                            <input type="number" name="Wicked Show" id="wicked" value="0"></p>
+                            <p><span>Total: </span>
+                            <input readonly type="number" value="0" id="wicked_total"></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <br> <br>
+    
+            <div class="right">
+                <form>
+                    <div id="cart">
+                        <h3> your cart: </h3>
+                        <label for="shipping">Shipping Method:</label>
+                        <select id="shipping" name="shipping">
+                            <option value="willCall" selected>Will Call</option>
+                            <option value="shipping">Shipping (+$10)</option>
+                        </select> 
+                        <br>
+                        <label for="total">Subtotal:</label>
+                        <input type="number" id="total" readonly value="0">
+                        <br>
+                        <label for="tax">Tax:</label>
+                        <input type="number" id="tax" readonly value="0">
+                        <br>
+                        <label for="fee">Shipping: </label>
+                        <input type="number" id="fee" readonly value="0">
+                        <br>
+                        <label for="grandTotal">Total:</label>
+                        <input type="number" id="grandTotal" readonly value="0">
+                    </div>
+                </form>
+                <br> <br> 
+                <form>
+                    <div id="info">
+                        <h3> customer information:</h3>
+                        <label for="name">Name:</label>
+                        <input id="name" type="text" name="Name" >
+                        <br>
+                        <label for="address">Address:</label>
+                        <input id="address" type="text" name="Address" >
+                        <br>
+                        <label for="zip">Zip Code:</label>
+                        <input id="zip" type="number" name="Zip Code" >
+                        <br>
+                        <label for="phone">Phone Number:</label>
+                        <input id="phone" type="tel" name="Phone Number" >
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="Email" >
+                        <br>
+                        <label for="payment">Payment Method:</label>
+                        <select id="payment" name="Payment Method">
+                            <option disabled selected>Select</option>
+                            <option value="creditCard">Credit Card</option>
+                            <option value="checkings">Checkings</option>
+                        </select>
+                        <br>
+                        <label for="cardNumber">Card Number:</label>
+                        <input type="text" id="cardNumber" name="Card Number" >
+                        <br><br>
+                        <br>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+                <div id="display"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2024 Aria Nguyen
+        </div>
+
+    </body>
+</html>

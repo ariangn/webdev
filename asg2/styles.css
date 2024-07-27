@@ -1,0 +1,158 @@
+/* My stylesheet! */
+
+@font-face { 
+	font-family: Voyage; 
+	src: url('voyage-regular.otf'); 
+} 
+
+body {
+    transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+	font-family: 'Voyage', serif; 
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+	background-color: #F3EEE8;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+	font-family: 'Voyage', serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.header h3 {
+    font-size: 18px;
+    margin: 0;
+    display: flex;
+    max-width: 50%;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    padding: 30px;
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Voyage, serif;
+    color: black;
+}
+
+ul:hover li a{
+  transform:scale(1.5);
+  opacity:0.2;
+  filter:blur(5px);
+}
+
+ul li a:hover{
+  transform:scale(2);
+  opacity:1;
+  filter:blur(0);
+  text-decoration:none;
+  color: #D73234;
+}
+
+ul li a:before{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  width:100%;
+  height:100%;
+  background:#F6B9C6;
+  transition:0.5s;
+  transform-origin:right;
+  transform:scaleX(0);
+  z-index:-1;
+}
+
+ul li a:hover:before{
+  transition:transform 0.5s;
+  transform-origin:left;
+  transform:scaleX(1);
+}
+
+/* Media query for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+
+    body {
+        font-family: 'Voyage', serif; 
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .main {
+    	flex-direction: column;
+    	align-items: flex-start;
+
+    }
+}
+
+
+p {
+	padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+img {
+	padding: 20px;
+}
+
+h2 {
+    font-size: 80px;
+}
+
+button {
+    font-family: 'Voyage', serif;
+    font-size: 30px;
+    padding: 10px;
+    background-color: #F3EEE8;
+    border: 2px dotted #000;
+    border-radius: 5px;
+}
+
+.footer {
+    font-family: 'Quicksand', sans-serif;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+}

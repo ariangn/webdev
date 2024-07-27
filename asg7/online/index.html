@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="onlinestore.css">
+        <meta name="author" content="Aria Nguyen">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+        <title>coffee shop</title>
+
+    </head>
+
+    <body>
+
+        <h2> online coffee shop </h2>
+
+        <form action="online.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" required><br>
+
+            <label for="product">Select a coffee:</label>
+            <br>
+            <select name="product" required>
+                <option value="espresso">Espresso - $2.50</option>
+                <option value="latte">Latte - $5.00</option>
+                <option value="cappuccino">Cappuccino - $3.50</option>
+            </select><br>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" min="1" required><br>
+
+            <input type="submit" id="button" value="Submit">
+            <input type="reset" id="button" value="Reset">
+        </form>
+
+        <p> to go back to my assignment 7 page, click <a href="../">here</a></p>
+
+        <div class="footer">
+            &copy; 2024 Aria Nguyen
+        </div>
+        
+    </body>
+
+</html>
+

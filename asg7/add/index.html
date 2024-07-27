@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta name="description" content="This is my Assignment page">
+        <meta name="author" content="Aria Nguyen">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="add.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+        <title> online calculator </title>
+
+    </head>
+
+    <body>
+
+        <h2> calculator </h2>
+
+        <form action="add.php" method="post">
+            <label for="firstNumber">enter first number:</label>
+            <input type="number" step="any" name="firstNumber" required><br>
+
+            <label for="secondNumber">enter second number:</label>
+            <input type="number" step="any" name="secondNumber" required><br>
+
+            <label for="operator">choose an operator:</label>
+            <select name="operator" required>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select><br>
+
+            <br>
+            <br>
+
+            <input type="submit" id="button" value="calculate">
+            <input type="reset" id="button" value="reset">
+
+        </form>
+
+         <p> to go back to my assignment 7 page, click <a href="../">here</a></p>
+
+        <div class="footer">
+            &copy; 2024 Aria Nguyen
+        </div>
+
+    </body>
+</html>

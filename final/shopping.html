@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css" />
+    <title>GAME - Shopping Cart</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div class="container">
+
+        <!-- header -->
+        <div class="header">
+            <h1>G A M E</h1>
+            <h4>GaME ARCaDE MaRKETPLaCE EXPERIENCE</h4>
+        </div>
+        
+        <!-- nav bar here -->
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a class="active" href="shopping.html">Shopping Cart</a>
+            <a href="signup.html">Sign-up</a>
+            <a href="login.html">Login</a>
+            <a href="search.html">Search</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+
+        <br> <br>
+
+        <div class="main1">
+            <h1> purchase your games here!</h1>
+            <script type="text/javascript" src="shopping.js"></script>
+            <form>
+                <!-- list of products -->
+                <div class="products">
+                    <div class="product">
+                        <img src="shopping/pacman.png"/>
+                        <div class="productinfo">
+                            <h3>Pac-Man</h3>
+                            <p>Price: $25</p>
+                            <p><span>Quantity: </span>
+                            <input type="number" name="pacman" id="pacman" min="0" value="0"></p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="product">
+                        <img src="shopping/monopoly.png"/>
+                        <div class="productinfo">
+                            <h3>Monopoly</h3>
+                            <p>Price: $30</p>
+                            <p><span>Quantity: </span>
+                            <input type="number" name="monopoly" id="monopoly" min="0" value="0"></p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="product">
+                        <img src="shopping/tetris.png"/>
+                        <div class="productinfo">
+                            <h3>Tetris</h3>
+                            <p>Price: $15</p>
+                            <p><span>Quantity: </span>
+                            <input type="number" name="tetris" id="tetris" min="0" value="0"></p>
+                        </div>
+                    </div>
+                </div>
+            
+                <br> <br> 
+                
+                <!-- shopping cart -->
+                <div id="cart">
+                    <h2> your cart: </h2>
+                    <label for="shipping">Shipping Method:</label> <br>
+                    <select id="shipping" name="shipping">
+                        <option value="pickup" selected>Pick-up</option>
+                        <option value="shipping">Shipping (+$10)</option>
+                    </select> 
+                    <br>
+                    <label for="total">Subtotal:</label> <br>
+                    <input type="number" name="total" id="total" readonly value="0">
+                    <br>
+                    <label for="tax">Tax:</label> <br>
+                    <input type="number" name="tax" id="tax" readonly value="0">
+                    <br>
+                    <label for="fee">Shipping: </label> <br>
+                    <input type="number" name="fee" id="fee" readonly value="0">
+                    <br>
+                    <label for="grandTotal">Total:</label> <br>
+                    <input type="number" name="grandTotal" id="grandTotal" readonly value="0">
+                </div>
+            
+                <br> <br> 
+                
+                <!-- customer info -->
+                <div id="info">
+                    <h2> customer information:</h2>
+                    <label for="name">Name:</label> <br>
+                    <input id="name" type="text" name="name" required>
+                    <br>
+                    <label for="address">Address:</label> <br>
+                    <input id="address" type="text" name="address" required>
+                    <br>
+                    <label for="zip">Zip Code:</label> <br>
+                    <input id="zip" type="number" name="zip" required>
+                    <br>
+                    <label for="phone">Phone Number:</label> <br>
+                    <input id="phone" type="tel" name="phone" required>
+                    <br>
+                    <label for="email">Email:</label> <br>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="cardNumber">Card Number:</label> <br>
+                    <input type="text" id="cardNumber" name="cc" required>
+                    <br>
+                    <label for="expiryDate">Expiration Date:</label> <br>
+                    <input type="text" id="expiryDate" name="exp" placeholder="MM/YY" required>
+                    <br>
+                    <label for="cvv">CVV:</label> <br>
+                    <input type="text" id="cvv" name="cvv" required>
+                    <br><br>
+                    <br>
+                    <input type="submit" id="button" value="Submit">
+                    <input type="reset" id="button" value="Reset">
+                </div>
+            </form>   
+
+        </div>
+
+        <br> <br> 
+
+        <div class="footer">
+            Laura Chen, Alex Manko, Aria Nguyen
+            &copy; Web Development - Updated 2023
+        </div>
+    </div>
+
+</body>
+</html>

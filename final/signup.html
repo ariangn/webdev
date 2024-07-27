@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css" />
+    <title>GAME - Sign Up</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>G A M E</h1>
+            <h4>GaME ARCaDE MaRKETPLaCE EXPERIENCE</h4>
+        </div>
+       <!--Nav bar-->
+ 
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="shopping.html">Shopping Cart</a>
+            <a class="active" href="signup.html">Sign-up</a>
+            <a href="login.html">Login</a>
+            <a href="search.html">Search</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+
+        <br> <br>
+        <div class="main1">
+            <h1> Sign-up </h1>
+            <!--use the same classes for css-->
+
+            <form action="signup.php" method="post">
+                <div class="part">
+                    <div class="intro">
+                        <!--store username+email+phone+psw in txt-->
+
+                        <label for="username">Username:</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                </div>
+                <p></p>
+
+                <div class="part">
+                    <div class="intro">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="input">
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <p></p>
+
+                <div class="part">
+                    <div class="intro">
+                        <label for="phone">Phone:</label>
+                    </div>
+                    <div class="input">
+                        <input type="phone" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <p></p>
+
+                <div class="part">
+                    <div class="intro">
+                        <label for="password">Password:</label>
+                    </div>
+                    <div class="input">
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                </div>
+                <p></p>
+<!--buttons to signup and rest-->
+
+                <input type = "submit" value ="Signup">
+                <input type = "reset">
+            </form>
+        </div>
+
+        <br> <br>
+<!--some footnotes-->
+
+        <div class="footer">
+            Laura Chen, Alex Manko, Aria Nguyen
+            &copy; Web Development - Updated 2023
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
