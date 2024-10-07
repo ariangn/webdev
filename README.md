@@ -17,7 +17,8 @@ Taken Fall 2023
  
 ## Final Project
 Simple matching card game created by me for homepage <br>
-<video width="200" src="https://github.com/user-attachments/assets/40a4e8e2-b66a-4e98-aa5f-3aae30ec92c9">
+<img width="500" src="https://github.com/user-attachments/assets/66f0f577-a81f-44ed-a993-e7225fe0a0b8">
+
 <br> <br>
 
 Sign-up and login using form submission and PHP <br>
